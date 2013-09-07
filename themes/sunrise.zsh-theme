@@ -8,8 +8,9 @@
 # echo -n அ  | hexdump
 # echo -e "xe0\xae\x85"
 # need to figure out to get this special char on prompt
-PCHARS=(λ π ஃ ∂ Δ)
-PCHAR=${PCHARS[$RANDOM % ${#PCHARS[*]}]}
+PCHARS=(λ π ஃ ∂ Δ அ ☆ ∞)
+#array index starts with 1 on zsh vs 0 on bash
+PCHAR=${PCHARS[$RANDOM % ${#PCHARS[*]} + 1]}
 
 # Color shortcuts
 R=$fg[red]
