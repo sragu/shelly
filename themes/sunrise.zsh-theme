@@ -8,7 +8,7 @@
 # echo -n அ  | hexdump
 # echo -e "xe0\xae\x85"
 # need to figure out to get this special char on prompt
-PCHARS=(λ π →  ஃ ψ ∂ Δ)
+PCHARS=(λ π ஃ ∂ Δ)
 PCHAR=${PCHARS[$RANDOM % ${#PCHARS[*]}]}
 
 # Color shortcuts
